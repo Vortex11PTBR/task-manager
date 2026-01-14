@@ -1,0 +1,83 @@
+@import "tailwindcss";
+
+@theme {
+  /* Definição de Cores */
+  --color-deep-blue: #030712;
+  
+  /* Animações Customizadas */
+  --animate-scan: scan 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  --animate-gradient: gradient 6s linear infinite;
+  --animate-slide-up: slide-up 0.8s ease-out forwards;
+  --animate-fade-in: fade-in 1s ease-out forwards;
+
+  @keyframes scan {
+    0% { transform: translateY(-10%); opacity: 0; }
+    50% { opacity: 1; }
+    100% { transform: translateY(1000%); opacity: 0; }
+  }
+
+  @keyframes gradient {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+  }
+
+  @keyframes slide-up {
+    0% { transform: translateY(30px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+  }
+
+  @keyframes fade-in {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+}
+
+/* Camada Base para reset e temas */
+@layer base {
+  html, body {
+    @apply transition-colors duration-500;
+  }
+
+  body {
+    @apply bg-white text-slate-900 antialiased;
+  }
+
+  .dark body {
+    /* Use the CSS variable defined above to set a consistent dark background */
+    background-color: var(--color-deep-blue);
+    color: #f8fafc; /* slate-50 fallback */
+  }
+}
+
+/* Utilitários Visuais */
+@layer utilities {
+  .bg-grid-white {
+    background-image: radial-gradient(circle, rgba(59, 130, 246, 0.2) 1px, transparent 1px);
+    background-size: 30px 30px;
+  }
+
+  .bg-size-200 {
+    background-size: 200% auto;
+  }
+  /* Utility for deep blue background used in class names */
+  .bg-deep-blue { background-color: var(--color-deep-blue); }
+}
+
+/* Timeline block styling for calendar */
+.timeline-block {
+  box-shadow: 0 6px 18px rgba(2,6,23,0.12);
+}
+
+/* Estilização do Calendário (React Day Picker) */
+.rdp {
+  --rdp-cell-size: 40px;
+  --rdp-accent-color: #2563eb;
+  --rdp-background-color: #dbeafe;
+  margin: 1em;
+}
+
+.dark .rdp {
+  color: white;
+  --rdp-accent-color: #3b82f6;
+  --rdp-background-color: #1e3a8a;
+}
