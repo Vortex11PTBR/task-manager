@@ -62,3 +62,10 @@ I value **clean code, self-documenting PRs, and architectural scalability.**
 **Built by Operators, for Operators.** 🚀
 
 ---
+<img width="1897" height="1078" alt="img01" src="https://github.com/user-attachments/assets/b4809757-5b70-44cd-9551-8c3d9358251a" />
+<img width="1898" height="1078" alt="img02" src="https://github.com/user-attachments/assets/ac8ac1a5-2c6a-4d68-947b-b08a59fcc27d" />
+<img width="1900" height="1078" alt="img03" src="https://github.com/user-attachments/assets/d09c9244-22c7-4fae-9aae-ddec4a6cb5f5" />
+<img width="1918" height="1078" alt="img04" src="https://github.com/user-attachments/assets/072e6401-3ce0-48c1-a7a9-b689bf5a3e62" />
+<img width="1918" height="1078" alt="img05" src="https://github.com/user-attachments/assets/74176e8d-fcba-4f01-a832-6a16806d4203" />
+<img width="1918" height="1078" alt="img06" src="https://github.com/user-attachments/assets/acae0dd3-f792-4d31-88dd-ffdb99c4b7d2" />
+<img width="1920" height="1080" alt="img07" src="https://github.com/user-attachments/assets/ac11cfb0-daa4-473c-93d3-503317b5737c" />
